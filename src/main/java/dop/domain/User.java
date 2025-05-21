@@ -1,5 +1,5 @@
 package dop.domain;
 
-record User(String name, ContactType contactType) {
+public record User(String name, ContactType contactType) {
 
 }
