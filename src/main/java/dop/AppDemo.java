@@ -16,10 +16,8 @@ public class AppDemo {
         var christopher = new User("Christopher", new ContactType.Email("coanezp@gmail.com"));
         var valentina = new User("Valentina", new ContactType.Phone("+58", "4143603151"));
 
-        // Instancia directa de la implementación del servicio
         LoginVerificationService verificationService = new LoginVerificationServiceImpl();
 
-        // Uso de la instancia del servicio
         verificationService.sendVerificationCode(christopher);
         verificationService.sendVerificationCode(valentina);
 
